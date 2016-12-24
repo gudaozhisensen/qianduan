@@ -113,11 +113,12 @@ and open the template in the editor.
     height: 100%;
   
 }
-.cont-l h3{
+.cont-l h3 li{
     
     float: left;
     font:20px/50px "Microsoft Yahei";/*设置字的大小和字体*/
 }
+
 
 .cont-m{
     float: left;

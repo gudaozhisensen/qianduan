@@ -35,7 +35,7 @@ and open the template in the editor.
 }
 .search input{
     float: right;
-    margin:10px 20px 0 0;
+    margin:20px 20px 0 0;
     border-radius: 25px;
     width: 270px;
     outline: none;/*当鼠标点击输入框后“边框不会变蓝”*/

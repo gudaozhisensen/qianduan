@@ -7,11 +7,9 @@ and open the template in the editor.
     Created on : 2016-12-24, 14:22:58
     Author     : lx
 */
-.body{
-    min-width: 1280px;
-    
 
-}
+
+
 .demo{
  
      width: 100%;
@@ -20,7 +18,7 @@ and open the template in the editor.
 }
 .top{
   
-     min-width: 800px;
+     min-width: 900px;
     
     width: 100%;
     height: 100px;
@@ -61,15 +59,15 @@ and open the template in the editor.
      min-width: 800px;
     position: absolute;
     width: 100%;
-    top:100;
+    top:100px;
     left: 0;
     height: 50px;
 
 }
 .tab{
-    overflow: hidden;
+   // overflow: hidden;
     left: 0;
-    top: 100;
+    top: 100px;
     width: 100%;
     height: 50px;
     color: #666;
@@ -133,20 +131,27 @@ and open the template in the editor.
 
 .cont{
     
+  //  display: inline-block;
     min-width: 800px;
+    
     width:100% ;
-    height: 400px;
-    background: #666;       
+    min-width: 800px;
+    height: 350px;
+    background: #666;    
+   overflow: hidden;
 }
 .cont-l{
-  min-width: 400px;
+    
+ 
      float: left;
-    width: 40%;
-    height: 100%;
+    width: 32%;
+
     color: white;
 }
 .cont-l h3 {
-    margin-left: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+ margin: 0 auto;
     width: 100%;
     float: left;
     font:25px/50px "Microsoft Yahei";/*设置字的大小和字体*/
@@ -172,37 +177,197 @@ and open the template in the editor.
    
 }
 .cont-m{
-    display: block;
+ 
     float: left;
-    width: 30%;
-    height: 100%;
+  width: 32%;
+
   
 }
 
 .cont-m h3{
-    margin-left: 20px;
+   padding-top: 10px;
     width: 100%;
     float: left;
     font:25px/50px "Microsoft Yahei";/*设置字的大小和字体*/
      color: white;
+    margin: 0 auto;
 }
 
-.cont-m  .link{
+.cont-m .link{
+    width: 70%;
     padding-top: 20px;
-    display: block;
+    display: inline;
     float: left;
-
+   
    
 }
-.cont-m .link a {
+.cont-m .link p:first-child{
    font:15px/30px "Microsoft Yahei";/*设置字的大小和字体*/
-   text-decoration: none;
-    color: white;
+  color: #ffffff;
+    text-indent: 2em;/*将段落的第一行缩进2个字*/
    
+}
+.cont-m .link p:last-child{
+    height: 85%;
+    
+    font:14px/30px "Microsoft Yahei";/*设置字的大小和字体*/
+     text-indent: 2em;/*将段落的第一行缩进2个字*/
+     color: #333333;
 }
 .cont-r{
+
+ position: relative;
+ 
     float: left;
-    width: 30%;
+    width: 32%;
     height: 100%;
+    
   
+}
+.cont-r h3{
+   padding-top: 10px;
+   padding-left: 50px;
+    width: 100%;
+    float: left;
+    font:25px/50px "Microsoft Yahei";/*设置字的大小和字体*/
+     color: white;
+   
+}
+
+.cont-r .note{
+    float: left;
+    position:absolute ;
+    top: 30%;
+    left: 30%;
+     font:15px/30px "Microsoft Yahei";/*设置字的大小和字体*/
+     color: #ffffff;
+    text-indent: 2em;/*将段落的第一行缩进2个字*/
+   padding:20px; 
+  
+}
+.cont-r .more{
+    position:absolute ;/*父类中填relative 子类中填absolute left right top bottom能实现基于父类的定位*/
+    right :15px;   
+    bottom: 50px;
+    float: left;
+    background: #00be3c;
+    width: 70px;
+    height: 30px;
+    border-radius: 3px;
+    
+}
+.cont-r .more p{
+    color: white;
+     font:15px/30px "Microsoft Yahei";/*设置字的大小和字体*/
+    
+    text-align: center;//字符居中
+}
+
+.content .picWall{
+  
+    width: 100%;
+    height: 400px;
+  
+}
+.img_pic{
+    width: 100%;
+    float: left;
+    height: auto;
+    background-image:url(../resource/wave.jpg);
+    
+    
+}
+.title-top{
+   
+   
+   width: 100%;
+   height: 50px;
+   background-color: #006666;
+}
+.title{
+    margin: 0.5% auto;
+     float: left;
+     width:41%;
+   
+   
+}
+
+.title1{
+     text-align: center;
+     float: left;
+      width: 17%;
+    height:100%;
+      //border-bottom:2px solid #e5e5e5;/*设置字旁边的线*/
+      //  border-right:4px solid #e5e5e5;/*设置字旁边的线*/
+}
+.title1 p{
+    padding-top: 10px;
+      letter-spacing:10px; /*字符间距*/
+      font:30px/30px "Microsoft Yahei";/*设置字的大小和字体*/
+      color: #ffffff;
+}
+.bean_l{
+     
+   float: right;
+   
+    width: 0;
+    height: 0;
+    border: 15px solid #00be3c;
+    border-radius: 15px;
+    border-right-color: #006666;
+    
+}
+.bean_r{
+    
+   float: left;
+   
+    width: 0;
+    height: 0;
+    border: 15px solid #00be3c;
+    border-radius: 15px;
+    border-left-color:#006666;
+}
+.pic_img{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    
+    
+}
+.pic{
+  float: left;
+    height: 100%;
+    width: 100%;
+   // background-color: #006666;
+    background-image: 
+}
+
+.pic_border{
+    
+    float: left;
+    width: 20%;
+    height: 100%;
+    margin: 0 auto;
+}
+.photo{
+    margin: 10% auto;
+  
+   border: 10px solid green;
+    float: left;
+    width:250px;
+    height: 300px;
+
+    background-color: #ffffff;
+}
+
+.photo img{
+    width: 100%;
+    height: 100%;
+}
+.footer{
+    
+    height: 100px;
+    width: 100%;
+    background-color: #666;
+    
 }
